@@ -1,5 +1,5 @@
 # Web_FinalHomework
-My Final Homework For Web Lesson
+My Final Homework For Web Lesson 2022
 
 # 第一章 产品定位
 
@@ -156,4 +156,4 @@ function drawbar() {
 //折线图、饼图及柱状标签图代码过于冗长，详见源代码
 ```
 
-![image-20220612155726672](D:/Typora/images/image-20220612155726672.png)
+
