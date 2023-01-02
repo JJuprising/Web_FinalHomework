@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>sbsspro</title>
+    <script src="xlsx.full.min.js"></script>
+    <script src="echart.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="sbsspro.js"></script>
+    <link rel="stylesheet" type="text/css" href="sbsspro.css">
+
+</head>
+<body >
+ <div class="bigbox">
+    <!-- 顶部导航栏 start -->
+    <ul>
+        <li><a href='#' class="logo"><img src="https://s2.loli.net/2022/05/28/7OZLM2B8ie1jaxn.png"></a></li>
+        <li style="float:right"><a href="about.html">关于</a></li>
+    </ul>
+    <div class="cutline"></div>
+    <!-- 顶部导航栏 end -->
+    
+    <input type="file" onchange="importExcel(this)" style="margin-left: 300px;"/>
+    
+    <!-- 右侧图标选择栏 start -->
+    <div class="rightBoard">
+        <ul class="selectul">
+            <li style="display: block;
+            height: 70px;
+            width: 300px;
+            color: #000;
+            float: right;
+            text-decoration: none;
+            font-size:x-large;font-weight:bolder;text-align:center">图表类型</li>
+            <li class="selectli"><a  onclick="drawbar()"><img src="https://s2.loli.net/2022/05/29/qiTpgkoEnSQyXOs.png" class="selectimg">柱状图</a></li>
+           <li class="selectli"><a  onclick="drawline()"> <img src="https://s2.loli.net/2022/05/29/5dJQr6fViehvBnR.png" class="selectimg">折线图</a></li>
+           <li class="selectli"><a  onclick="drawpie()" > <img src="https://s2.loli.net/2022/05/29/HIgZKz34RqFheEO.png" class="selectimg">饼图</a></li>
+           <li class="selectli"><a  onclick="drawbarlabel()" > <img src="https://s2.loli.net/2022/06/06/wQGNHdzPsbftrID.png" class="selectimg">柱状标签图</a></li>
+        </ul>
+        
+    </div>
+    <!-- 右侧图标选择栏 end -->
+    <!-- <button onclick="drawpic(1)">开始画图</button>
+    <button onclick="switchvar()">交换变量</button> -->
+    <div style="float:left;width:350px;height: 400px;background-color: #eee;margin-left: 30px;margin-top: 30px;">
+      <div id="databoard" class="databoard">数据展示</div>
+      <select id="deledata">
+        <option selected>-请选择要你要删除的数据-</option>
+      </select>
+      <button onclick="deledata()">确定</button>
+    </div>
+    <div id="main" class="drawarea"></div>
+</div>
+</body>
+
+</html>

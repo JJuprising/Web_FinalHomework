@@ -1,0 +1,94 @@
+.bigbox{
+    width: 100%;
+    height: 1000px;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #ffffff;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+li a img{
+    width: 120px;
+    height: 30px;
+}
+li a:hover:not(.logo) {
+    background-color: #cecece;
+}
+
+.logo{
+    background-color: white;
+}
+.cutline{
+    margin-bottom: 13px;
+    border-top: #cecece 1px;
+    width: 100%;
+    height: 25px;
+    background-color: #f5f7f9;
+}
+.rightBoard{
+    float:right;
+    border: #cecece solid;
+    width: 300px;
+    height: 500px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.selectul{
+    list-style-type: none;
+    width: 300px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+.selectli{
+    display: block;
+    height: 100px;
+    width: 300px;
+    color: #000;
+    float: right;
+    text-decoration: none;
+    font-size: larger;
+}
+.selectimg{
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+.drawarea{
+    width: 700px;
+    height:500px;
+    background: #eee;
+    border: 1px solid #cecece;
+    margin-left: 400px;
+    margin-top: 70px;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; */
+}
+.databoard{
+  border: 1px solid #cecece;
+  overflow: hidden;
+  white-space:normal; 
+  word-break:break-all;
+    width:350px;
+    height: 400px;
+    float: left;
+   
+    
+}
